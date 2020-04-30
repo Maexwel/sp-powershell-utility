@@ -1,6 +1,7 @@
 # Function that set a Key-value PropertyBag to a site collection
 # That property bag is indexed to appear in search
 # cf https://blog.kloud.com.au/2018/04/26/how-to-make-property-bag-values-indexed-and-searchable-in-sharepoint-online/
+# Sometimes, a crawl is also necessary to re-index site collection and make these property bags available in global search
 function Set-PropertyBagValue {
     param($tenant, $siteCollection, $key, $value)
     try {
